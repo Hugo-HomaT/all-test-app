@@ -1158,6 +1158,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 4282568}
+    - target: {fileID: 5049429805640787079, guid: 7ef48305e22b2475596501e804d14b63, type: 3}
+      propertyPath: lightIntensity
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ef48305e22b2475596501e804d14b63, type: 3}
 --- !u!1 &836554193

@@ -33,6 +33,11 @@ public class PlayableSettings : MonoBehaviour
         if (instance == null)
             instance = this;
         
+
+    }
+
+    private void Start()
+    {
         // Only set camera angle if intro is disabled
         if (!enableIntro)
         {
