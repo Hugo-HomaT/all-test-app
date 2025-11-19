@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using HomaPlayables;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -215,9 +216,9 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Luna.Unity.Playable.InstallFullGame();
-            Luna.Unity.LifeCycle.GameEnded();
-            Luna.Unity.Analytics.LogEvent("Game over button clicked",1);
+            HomaEventTracker.InstallFullGame();
+            HomaEventTracker.GameEnded();
+            HomaEventTracker.TrackEvent("game_over_clicked", new { value = 1 });
         }
     }
 
@@ -229,7 +230,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Luna.Unity.Playable.InstallFullGame();
+            HomaEventTracker.InstallFullGame();
         }
     }
     
@@ -242,9 +243,10 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Luna.Unity.Playable.InstallFullGame();
-            Luna.Unity.LifeCycle.GameEnded();
-            Luna.Unity.Analytics.LogEvent("Tower hit auto redirect", 1);
+            
+            HomaEventTracker.InstallFullGame();
+            HomaEventTracker.GameEnded();
+            HomaEventTracker.TrackEvent("Tower hit auto redirect", new { value = 1 });
         }
     }
 

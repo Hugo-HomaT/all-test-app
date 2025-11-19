@@ -1,4 +1,5 @@
 using System.Collections;
+using HomaPlayables;
 using UnityEngine;
 
 public class HoleController : MonoBehaviour
@@ -367,7 +368,7 @@ public class HoleController : MonoBehaviour
                     int remainingTopItems = CountRemainingTopItems();
                     if (remainingTopItems == 0 && !GameManager.instance.isGameOver)
                     {
-                        Luna.Unity.Analytics.LogEvent("win_top_item_swallowed", 1);
+                        HomaEventTracker.TrackEvent("win_top_item_swallowed", new { value = 1 });
                         AudioManager.instance?.PlayWinSound();
                         GameManager.instance.GameOver(true);
                     }

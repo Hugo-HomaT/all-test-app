@@ -1,0 +1,41 @@
+{
+    "version": "1.0",
+    "scenes": {
+        "scenePaths": [],
+        "startupSceneIndex": 0
+    },
+    "exclusions": {
+        "autoExcludeSDKs": true,
+        "customExclusionPatterns": [],
+        "forceIncludePatterns": []
+    },
+    "optimization": {
+        "enableCodeStripping": true,
+        "enableIL2CPPMaster": false,
+        "enableMinification": true,
+        "enableBase64": false,
+        "memorySize": 256,
+        "enableShadows": true,
+        "enableVFX": true,
+        "enableAntiAliasing": false,
+        "enableReflectionProbes": false,
+        "qualityLevel": 0,
+        "audioMono": true,
+        "audioSampleRate": 22050,
+        "excludePhysics2D": true,
+        "excludeTerrain": true,
+        "excludeVideo": true,
+        "excludeAI": true,
+        "excludeXR": true,
+        "enableTextureOptimization": true,
+        "maxTextureSize": 512,
+        "convertAudioToMono": true
+    },
+    "metadata": {
+        "lastBuildDate": "",
+        "unityVersion": "",
+        "pluginVersion": "1.0.0",
+        "lastBuildSize": 0,
+        "compressionFormat": ""
+    }
+}

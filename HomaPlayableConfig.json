@@ -1,0 +1,28 @@
+{
+    "version": "1.0",
+    "outputDirectory": "C:/Users/hugod/Desktop",
+    "outputFilename": "HomaPlayable44",
+    "scenes": {
+        "scenePaths": [],
+        "startupSceneIndex": 0
+    },
+    "exclusions": {
+        "autoExcludeSDKs": true,
+        "customExclusionPatterns": [],
+        "forceIncludePatterns": []
+    },
+    "optimization": {
+        "enableCodeStripping": true,
+        "enableTextureOptimization": true,
+        "enableAudioOptimization": true,
+        "maxTextureSize": 1024,
+        "convertAudioToMono": true
+    },
+    "metadata": {
+        "lastBuildDate": "19/11/2025 21:43:45",
+        "unityVersion": "2021.3.45f2",
+        "pluginVersion": "1.0.0",
+        "lastBuildSize": 14606172,
+        "compressionFormat": "Gzip"
+    }
+}

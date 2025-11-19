@@ -44,9 +44,7 @@ public class AudioManager : MonoBehaviour
     
     private void Start()
     {
-        // Subscribe to Luna mute events
-        Luna.Unity.LifeCycle.OnMute += OnMute;
-        Luna.Unity.LifeCycle.OnUnmute += OnUnmute;
+
         
         // Update volumes from PlayableSettings
         UpdateVolumesFromSettings();
@@ -62,9 +60,7 @@ public class AudioManager : MonoBehaviour
     
     private void OnDestroy()
     {
-        // Unsubscribe from Luna events
-        Luna.Unity.LifeCycle.OnMute -= OnMute;
-        Luna.Unity.LifeCycle.OnUnmute -= OnUnmute;
+
     }
     
     private void InitializeAudioSources()

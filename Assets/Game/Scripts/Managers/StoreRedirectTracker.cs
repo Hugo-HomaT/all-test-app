@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using HomaPlayables;
 using UnityEngine;
 
 public class StoreRedirectTracker : MonoBehaviour
@@ -167,12 +168,10 @@ public class StoreRedirectTracker : MonoBehaviour
             hasRedirected = true;
         }
         
-        // Log analytics
-        Luna.Unity.Analytics.LogEvent($"Store Redirect - {reason}", 1);
-        
+        HomaEventTracker.TrackEvent($"Store Redirect - {reason}", new { value = 1 });
         // Trigger store redirection
-        Luna.Unity.Playable.InstallFullGame();
-        Luna.Unity.LifeCycle.GameEnded();
+        HomaEventTracker.InstallFullGame();
+        HomaEventTracker.GameEnded();
     }
     
     // Public getters for current values

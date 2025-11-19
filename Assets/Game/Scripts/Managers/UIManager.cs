@@ -1,4 +1,5 @@
 using System;
+using HomaPlayables;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -130,7 +131,6 @@ public class UIManager : MonoBehaviour
     public void ShowShootScreen()
     {
         shootScreen.SetActive(true);
-        Luna.Unity.Analytics.LogEvent("screen_shoot_showed",1);
             if (handCursor != null) handCursor.SetForceHidden(true);
     }
     
@@ -144,15 +144,14 @@ public class UIManager : MonoBehaviour
         var screen = isWin ? winScreen : loseScreen;
         playScreen.gameObject.SetActive(false);
         screen.SetActive(true);
-        Luna.Unity.Analytics.LogEvent(Luna.Unity.Analytics.EventType.EndCardShown);
 
         if (isWin)
         {
-            Luna.Unity.Analytics.LogEvent("screen_win_showed",1);
+            HomaEventTracker.TrackEvent("screen_win_showed", new { value = 1 });
         }
         else
         {
-            Luna.Unity.Analytics.LogEvent("screen_lose_showed",1);
+            HomaEventTracker.TrackEvent("screen_lose_showed", new { value = 1 });
         }
         
     }
@@ -165,10 +164,9 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            // Fallback to direct redirect if tracker not available
-            Luna.Unity.Playable.InstallFullGame();
-            Luna.Unity.Analytics.LogEvent("Button clicked",1);
-            Luna.Unity.LifeCycle.GameEnded();
+            HomaEventTracker.InstallFullGame();
+            HomaEventTracker.TrackEvent("Button clicked", new { value = 1 });
+            HomaEventTracker.GameEnded();
         }
     }
     
@@ -180,10 +178,10 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            // Fallback to direct redirect if tracker not available
-            Luna.Unity.Playable.InstallFullGame();
-            Luna.Unity.Analytics.LogEvent("Banner clicked",1);
-            Luna.Unity.LifeCycle.GameEnded();
+
+            HomaEventTracker.InstallFullGame();
+            HomaEventTracker.TrackEvent("Banner clicked", new { value = 1 });
+            HomaEventTracker.GameEnded();
         }
     }
     

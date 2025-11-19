@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.homa.playables": {
+      "version": "file:C:/Users/hugod/Documents/GitHub/hugo-playable-test/HomaPlayables",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -160,12 +166,6 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
-    },
-    "uk.lunalabs.luna": {
-      "version": "file:6.4.0/scripts",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
     },
     "com.unity.modules.animation": {
       "version": "1.0.0",
