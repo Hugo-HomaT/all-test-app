@@ -1,0 +1,21 @@
+if preloader && preloader.active
+    style
+        include ../css/preloader.css
+
+    #application-preloader.preloader
+        .preloader__background__color__overlay(style={background: preloader.backgroundHexColor})
+            span.preloader__luna__logo
+                if preloader.logo
+                    img.preloader__logo(id="asset/preloader/logo", src=preloader.logo)
+                else
+                    include ../img/luna_logo.svg
+            .preloader__background__shape1
+            .preloader__background__shape2
+
+            .preloader__wrapper(class="wrapper")
+                img.preloader__icon(id="asset/preloader/icon", src=preloader.icon, class="wrapper")
+                if package.applicationName
+                    span.preloader__name(class="wrapper") #{ package.applicationName }
+                .preloader__container(class="wrapper")
+                    .preloader__outer__bar
+                        .preloader__bar

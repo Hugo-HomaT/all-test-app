@@ -1,0 +1,11 @@
+{
+    "name": "uk.lunalabs.luna",
+    "displayName": "Luna",
+    "version": "5.5.1",
+    "unity": "2018.2",
+    "description": "Unity to HTML5 conversion engine",
+    "keywords": [
+        "Luna"
+    ],
+    "dependencies": {}
+}

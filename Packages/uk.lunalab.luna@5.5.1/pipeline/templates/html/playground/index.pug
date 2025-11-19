@@ -1,0 +1,15 @@
+extends  ../resources/pug/layout
+
+block dev-tools-detector
+
+block scripts
+    for resource in resources.scripts
+        script( src=resource.src defer )
+
+block content
+    script
+        include content.js
+
+block runtime
+    script
+        include runtime.js

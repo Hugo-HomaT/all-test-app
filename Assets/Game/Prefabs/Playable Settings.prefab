@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5049429805640787076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5049429805640787078}
+  - component: {fileID: 5049429805640787079}
+  m_Layer: 0
+  m_Name: Playable Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5049429805640787078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5049429805640787076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25, y: 0, z: 20.68}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5049429805640787079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5049429805640787076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077f122dda951d240be52a31e68d5b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  coloredMaterials:
+  - MaterialHolder: 0
+    Material: {fileID: 2100000, guid: f5dbef5a14ad545bc93af1cbfc43302d, type: 2}
+    Textures: []
+    ColorField: _Color
+    TextureField: _MainTex
+    DefaultColor: {r: 0, g: 0, b: 0, a: 1}
+  - MaterialHolder: 1
+    Material: {fileID: 2100000, guid: dc65765473fcb8948b65cfae10aa4335, type: 2}
+    Textures:
+    - {fileID: 2800000, guid: 2c296b4df0291dd4c91d864c9b8b3e80, type: 3}
+    - {fileID: 2800000, guid: 76f5b46f43926304f993a8e78dd6958c, type: 3}
+    - {fileID: 2800000, guid: 324e0985c6b31404aa14e27c3851929b, type: 3}
+    - {fileID: 2800000, guid: e494a0677630c1c4a87f61a993078025, type: 3}
+    - {fileID: 2800000, guid: 0f8a572d323fffd4d9f82842139b0009, type: 3}
+    - {fileID: 2800000, guid: 4c294bab85910984c8dc34021d2f1785, type: 3}
+    - {fileID: 2800000, guid: c6b94cbbb4925aa40ba1fc8cf62bc456, type: 3}
+    - {fileID: 2800000, guid: 1bc51d01e366eb04f8caf21579ce540f, type: 3}
+    ColorField: _Color
+    TextureField: _MainTex
+    DefaultColor: {r: 1, g: 1, b: 1, a: 1}
+  cursors:
+  - {fileID: 21300000, guid: 23b7c83ba92535643afb2b195197d17d, type: 3}
+  - {fileID: 21300000, guid: dc683eba601d7b8499bbe0aaf5059206, type: 3}
+  - {fileID: 21300000, guid: 9a4be49f62bffac439da9b2c4a835026, type: 3}
+  - {fileID: 21300000, guid: 153b80def4470cf41ac04b71512855d5, type: 3}
+  - {fileID: 21300000, guid: eebea04fa17dbc54a90f32bf22749b0b, type: 3}
+  - {fileID: 21300000, guid: 23b7c83ba92535643afb2b195197d17d, type: 3}
+  sunlight: {fileID: 0}
+  gameTimeInSeconds: 150
+  startGameplayTimerOnTouch: 1
+  gameOverScreenDelay: 1
+  cameraAngle: {x: 60, y: 0, z: 0}
+  enableHandCursor: 0
+  cursorScale: 1
+  handCursor: 4
+  throwableObjectType: 0
+  showFlower: 0
+  levelUpSizeIncreaseMultiplier: 1.2
+  swallowCountFirstLevel: 5
+  swallowNeededMultiplier: 1.7
+  holeSpeedIncreaseType: 1
+  holeSpeedIncrease: 1.09
+  objectiveAmount: 400
+  enableWinOnSwallowTopItem: 0
+  enableIntro: 1
+  startCameraAngle: {x: 50, y: 0, z: 0}
+  endCameraAngle: {x: 60, y: 0, z: 0}
+  startCameraPosition: {x: 0, y: 9, z: -8}
+  endCameraPosition: {x: 0, y: 0.5, z: 0}
+  cameraTransitionDelay: 0.6
+  cameraTransitionDuration: 1.3
+  startFOV: 40
+  endFOV: 40
+  fovTransitionDelay: 0.1
+  fovTransitionDuration: 1
+  blockPlayerInput: 1
+  blockInputDuration: 2
+  showIntroText: 0
+  introText: Hit the tower
+  introTextDuration: 3
+  hideIntroTextOnPlayerTouch: 0
+  introTextHideAfterDuration: 1
+  enableFakeControl: 0
+  enableMovingVisual: 0
+  enableMovingHand: 0
+  enableFloatingAnimation: 1
+  floatingHeight: 1
+  floatingSpeed: 2
+  enableSelfRotation: 1
+  rotationSpeed: 90
+  selectedTopItem: 2
+  enableTopItemFloating: 1
+  topItemFloatingHeight: 0.5
+  topItemFloatingSpeed: 2
+  enableTopItemRotation: 1
+  topItemRotationSpeed: 45
+  enableSparkleParticle: 0
+  towerWidth: 0.5
+  towerHeight: 8
+  topItemSizeMultiplier: 0.7
+  enableTowerShootingWin: 0
+  enableTowerShootingLose: 1
+  towerWinAutoRedirectDelay: 1
+  towerMissCheckDelay: 2
+  groundColor: {r: 0.41568628, g: 0.6431373, b: 0.21568628, a: 1}
+  groundTexture: 0
+  lightColor: {r: 1, g: 0.94248325, b: 0.8726415, a: 1}
+  lightIntensity: 0.75
+  lightRotation: {x: 50, y: -139.995, z: 0}
+  enableJoystick: 1
+  enableTutoJoystick: 1
+  tutoJoystickShowAtStart: 1
+  tutoJoystickDisplayDelay: 3
+  enableTutoJoystickAfterTouch: 1
+  tutoJoystickShowTimesAfterTouch: 5
+  holeMoveSpeed: 3
+  holeColor: {r: 0, g: 0, b: 0, a: 1}
+  holeSkin: 3
+  movementIndicatorColor: {r: 1, g: 1, b: 1, a: 1}
+  enableMovementIndicator: 0
+  hideMovementIndicatorWhenIdle: 0
+  movementIndicatorType: 1
+  aimArrowColor: {r: 0.5359211, g: 0, b: 1, a: 1}
+  useHoleStartPosition: 1
+  holeStartPosition: {x: 0, y: 0, z: 7.23}
+  displayHoleCountFeedback: 1
+  enableArrowDirection: 1
+  arrowDirectionTargetType: 0
+  arrowDirectionColor: {r: 1, g: 0.77952445, b: 0, a: 1}
+  arrowDirectionOutlineColor: {r: 0, g: 0.61685514, b: 1, a: 1}
+  arrowDirectionScale: 1
+  arrowDirectionPosition: {x: 0, y: 0.5, z: 0.7}
+  arrowDirectionModel: 1
+  arrowDirectionYoyoSpeed: 2
+  arrowDirectionYoyoDistance: 0.2
+  showHoleGrowVFX: 1
+  Level: 2
+  corridorTheme: 4
+  circularTheme: 4
+  lvlCircular1Theme: 0
+  lvlCircular2Theme: 7
+  lvlCircular3Theme: 6
+  lvlCircular4Theme: 5
+  displayTopBanner: 0
+  displayMidBanner: 0
+  displayBotBanner: 1
+  winSound: {fileID: 8300000, guid: 7a80f93999fc64f4894907508ae87f29, type: 3}
+  towerHitSound: {fileID: 8300000, guid: b8a8cb6f3498ef84e80125ff9475a2c1, type: 3}
+  shootSound: {fileID: 8300000, guid: b8a8cb6f3498ef84e80125ff9475a2c1, type: 3}
+  failSound: {fileID: 8300000, guid: 14866d2c8d580a644aceb7fd230e9d76, type: 3}
+  introSound: {fileID: 8300000, guid: 4b52301a815a8334ea4b9a1ded21ac7f, type: 3}
+  holeGrowSound: {fileID: 8300000, guid: 5f860a6fa1781474186e89796df649aa, type: 3}
+  collectItemSFX: {fileID: 8300000, guid: b8a8cb6f3498ef84e80125ff9475a2c1, type: 3}
+  enableClickRedirection: 0
+  clicksToRedirect: 3
+  enableTimeRedirection: 0
+  timeToRedirect: 1
+  redirectAfterThrow: 1
+  redirectDelayAfterThrow: 1
+  enableRedirectAfterFirst: 1
+  enableObjectivesUI: 1
+  objectivesOnlyTopItem: 0
+  enableObjectivesTuto: 1
+  objectivesTutoGlowSpeed: 1
+  objectivesTutoTravelTime: 1
+  objectivesTutoEndPause: 0.2
+  enableObjectivePickupFlight: 1
+  objectivePickupFlightDuration: 0.4

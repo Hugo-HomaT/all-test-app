@@ -1,0 +1,21 @@
+{
+    "com.unity.textmeshpro": {
+        "^3.0.6": "com.unity.textmeshpro/3.0.6/TextMeshPro.dll",
+        "^3.0.0": "com.unity.textmeshpro/3.0.0/TextMeshPro.dll",
+        "^2.0.0": "com.unity.textmeshpro/2.0.0/TextMeshPro.dll",
+        "^1.4.0": "com.unity.textmeshpro/2.0.0/TextMeshPro.dll",
+        "^1.3.0": "com.unity.textmeshpro/1.3.0/TextMeshPro.dll"
+    },
+    "com.unity.cinemachine": {
+        "^2.4.0": "com.unity.cinemachine/2.4.0/Cinemachine.dll",
+        "^2.3.4": "com.unity.cinemachine/2.3.4/Cinemachine.dll",
+        "^2.2.9": "com.unity.cinemachine/2.2.9/Cinemachine.dll"
+    },
+    "com.esotericsoftware.spine.spine-csharp": {
+        "~4.1.0": "com.esotericsoftware.spine.spine-csharp/4.1/spine-csharp.dll",
+        "~4.0.0": "com.esotericsoftware.spine.spine-csharp/4.0/spine-csharp.dll"
+    },
+    "com.unity.ide.rider": {
+        "*": "com.unity.ide.rider/3.0.0/JetBrains.dll"
+    }
+}
